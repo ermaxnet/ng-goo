@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 798px;
+}
+
+.boxes {
+    background-color: #E6E6E6;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100px;
+}
+
+.reset-button {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    cursor: pointer;
+    font-weight: bold;
+    outline: none!important;
+    text-transform: uppercase;
+}
+
+::ng-deep .box {
+    cursor: pointer;
+}
+
+::ng-deep .box:not(:last-child) {
+    margin-bottom: 10px;
+}
