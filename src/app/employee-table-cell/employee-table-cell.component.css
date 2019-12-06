@@ -1,0 +1,19 @@
+:host {
+    display: table-cell;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+img {
+    border-radius: 50%;
+    margin: 10px 0;
+}
+
+a {
+    color: skyblue;
+    text-decoration: none;
+}
+
+address {
+    padding-right: 48px;
+}

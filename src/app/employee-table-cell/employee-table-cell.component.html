@@ -1,0 +1,6 @@
+<ng-container [ngSwitch]="componentType">
+    <img *ngSwitchCase="'image'" [src]="value" [alt]="alt" />
+    <a *ngSwitchCase="'email'" [href]="'mailto:' + value">{{value}}</a>
+    <address *ngSwitchCase="'address'">{{value}}</address>
+    <span *ngSwitchDefault>{{value}}</span>
+</ng-container>

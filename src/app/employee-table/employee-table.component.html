@@ -1,0 +1,41 @@
+<table>
+    <colgroup>
+        <col style="width: 70px;" />
+        <col />
+        <col />
+        <col />
+        <col />
+    </colgroup>
+    <thead>
+        <tr>
+            <th></th>
+            <th>Full Name</th>
+            <th>Gender</th>
+            <th>Address</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <app-employee-table-cell
+                componentType="image"
+                [value]="employee.thumbnail"
+                [alt]="employee.fullName"
+            ></app-employee-table-cell>
+            <app-employee-table-cell
+                [value]="employee.fullName"
+            ></app-employee-table-cell>
+            <app-employee-table-cell
+                [value]="employee.gender"
+            ></app-employee-table-cell>
+            <app-employee-table-cell
+                componentType="address"
+                [value]="employee.address"
+            ></app-employee-table-cell>
+            <app-employee-table-cell
+                componentType="email"
+                [value]="employee.email"
+            ></app-employee-table-cell>
+        </tr>
+    </tbody>
+</table>
