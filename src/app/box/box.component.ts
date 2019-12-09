@@ -1,9 +1,10 @@
-import { Component, OnInit, Input, HostBinding } from '@angular/core';
+import { Component, OnInit, Input, HostBinding, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-box',
   templateUrl: './box.component.html',
-  styleUrls: ['./box.component.css']
+  styleUrls: ['./box.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BoxComponent implements OnInit {
   @Input() name!: string;
